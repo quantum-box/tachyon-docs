@@ -1,0 +1,9 @@
+[book]
+authors = ["Takanori Fukuyama"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "Tachyon Platform Documentation"
+
+[preprocessor.plantuml]
+plantuml-cmd = "http://www.plantuml.com/plantuml"

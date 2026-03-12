@@ -1,0 +1,14 @@
+{
+  "featureFlagActionAccess": [
+    {
+      "action": "procurement:ListProcurementPrices",
+      "featureEnabled": true,
+      "policyAllowed": true
+    },
+    {
+      "action": "crm:GetClient",
+      "featureEnabled": true,
+      "policyAllowed": true
+    }
+  ]
+}
