@@ -1,4 +1,4 @@
-import { getDocument, getDocuments, extractHeadings } from "@/lib/library-api";
+import { getDocument, extractHeadings } from "@/lib/library-api";
 import { notFound } from "next/navigation";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer";
 import { TableOfContents } from "@/components/TableOfContents";
@@ -10,15 +10,6 @@ export const runtime = "edge";
 
 interface Props {
   params: Promise<{ slug: string }>;
-}
-
-export async function generateStaticParams() {
-  try {
-    const docs = await getDocuments();
-    return docs.map((doc) => ({ slug: doc.slug }));
-  } catch {
-    return [];
-  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
