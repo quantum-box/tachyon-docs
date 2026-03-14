@@ -27,6 +27,9 @@ export default async function Home() {
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
           クラウドプラットフォームの機能、設定、APIリファレンスを網羅したドキュメントです。
         </p>
+        <p className="mt-3 text-sm text-blue-600 dark:text-blue-400">
+          Preview deploy verification branch for March 14, 2026.
+        </p>
       </div>
 
       {/* Quick links */}
